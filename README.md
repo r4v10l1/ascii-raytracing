@@ -1,2 +1,2 @@
-# ascii-raytracing
-Raytracing tests
+# Ascii raytracing
+**Raytracing tests**
