@@ -25,13 +25,13 @@ int main() {
 
     /* ----------------------------------------------------------- */
 
-    clear_array(grid_info, '.');
+    clear_array(grid_info, 176);
 
     end_pos.x = 40; end_pos.y = 15;
-    trace_line(grid_info, start_pos, end_pos, '-');
+    trace_line(grid_info, start_pos, end_pos, '.');
 
-    /* end_pos.x = 10; end_pos.y = 1; */
-    /* trace_line(grid_info, start_pos, end_pos, '-'); */
+    end_pos.x = 10; end_pos.y = 1;
+    trace_line(grid_info, start_pos, end_pos, '.');
 
     set_coord(grid_info, start_pos, '@');    // Same as main_grid[x][y] = '@'
 
