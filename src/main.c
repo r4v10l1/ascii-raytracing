@@ -4,7 +4,7 @@
 #include "bresenhams_line_algorithm.h"
 #include "grid.h"
 
-#define HEIGHT 20
+#define HEIGHT 40
 #define WIDTH 100
 
 #define START_X 30
@@ -39,7 +39,16 @@ int main() {
     end_pos.x = 35; end_pos.y = 1;
     trace_line(grid_info, start_pos, end_pos, '.');
 
+    end_pos.x = 50; end_pos.y = 3;
+    trace_line(grid_info, start_pos, end_pos, '.');
+
     end_pos.x = 25; end_pos.y = 5;
+    trace_line(grid_info, start_pos, end_pos, '.');
+
+    end_pos.x = 50; end_pos.y = 32;
+    trace_line(grid_info, start_pos, end_pos, '.');
+
+    end_pos.x = 3; end_pos.y = 25;
     trace_line(grid_info, start_pos, end_pos, '.');
 
     set_user(grid_info, start_pos);
