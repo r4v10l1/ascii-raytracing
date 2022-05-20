@@ -25,7 +25,7 @@ int main() {
 
     /* ----------------------------------------------------------- */
 
-    clear_array(grid_info, 176);
+    clear_array(grid_info, ' ');
 
     end_pos.x = 40; end_pos.y = 15;
     trace_line(grid_info, start_pos, end_pos, '.');
