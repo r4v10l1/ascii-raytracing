@@ -20,7 +20,7 @@ int main() {
     grid_info.h = HEIGHT;
     grid_info.back_char = ' ';
     grid_info.user_char = '@';
-    grid_info.wall_char = 219;
+    grid_info.wall_char = '-';
     
     // Set start pos point
     arr_point start_pos = {START_X, START_Y};
@@ -36,13 +36,10 @@ int main() {
     end_pos.x = 10; end_pos.y = 1;
     trace_line(grid_info, start_pos, end_pos, '.');
 
-    end_pos.x = 30; end_pos.y = 1;
+    end_pos.x = 35; end_pos.y = 1;
     trace_line(grid_info, start_pos, end_pos, '.');
 
-    end_pos.x = 40; end_pos.y = 10;
-    trace_line(grid_info, start_pos, end_pos, '.');
-
-    end_pos.x = 20; end_pos.y = 5;
+    end_pos.x = 25; end_pos.y = 5;
     trace_line(grid_info, start_pos, end_pos, '.');
 
     set_user(grid_info, start_pos);
